@@ -20,7 +20,7 @@ def word_count_from_hdfs(hdfs_path, output_path):
 if __name__ == "__main__":
     # Specify the file in HDFS and output file
     hdfs_input_file = '/user/test_file.txt'  # Path on HDFS
-    local_output_file = 'text_analysis_output.txt'  # Output file on local system
+    local_output_file = './text_analysis_output.txt'  # Output file on local system
 
     # Perform word count and output results
     word_count_from_hdfs(hdfs_input_file, local_output_file)
